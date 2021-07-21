@@ -30,7 +30,7 @@ After install package
 //example 1
 import DeDuplicated from 'de_duplicated';
 // OR
-const DeDuplicated = require('de_duplicated');
+const DeDuplicated = require('../de_duplicate/build').default;
 
 let simpleArray = [2, 5, 8, 2, 2, 8, 5, 2, 3];
 
@@ -47,7 +47,7 @@ console.log(uniqueSimpleArray);
 
 import DeDuplicated from 'de_duplicated';
 // OR
-const DeDuplicated = require('de_duplicated');
+const DeDuplicated = require('../de_duplicate/build').default;
 
 let simpleArray = ['john', 'milad', 'Milad', 'john', 'John'];
 
@@ -63,7 +63,7 @@ console.log(uniqueSimpleArray);
  //example 3
 import DeDuplicated from 'de_duplicated';
 // OR
-const DeDuplicated = require('de_duplicated');
+const DeDuplicated = require('../de_duplicate/build').default;
 
 let simpleArray = [1, 2, 1, 2, 5, 8, 8, 5, 'john', 'milad', 'Milad', 'john', 'John'];
 
@@ -80,7 +80,7 @@ console.log(uniqueSimpleArray);
     //example 1
 import DeDuplicated from 'de_duplicated';
 // OR
-const DeDuplicated = require('de_duplicated');
+const DeDuplicated = require('../de_duplicate/build').default;
 
 let complexArray = [
     { id: 1, name: "Milad", age: 24 },
@@ -105,7 +105,7 @@ console.log(uniqueComplexArray);
     //example 2
 import DeDuplicated from 'de_duplicated';
 // OR
-const DeDuplicated = require('de_duplicated');
+const DeDuplicated = require('../de_duplicate/build').default;
 
 let complexArray = [
     { id: 1, name: "Milad", age: 24 },
@@ -126,7 +126,7 @@ console.log(uniqueComplexArray);
     //example 3
 import DeDuplicated from 'de_duplicated';
 // OR
-const DeDuplicated = require('de_duplicated');
+const DeDuplicated = require('../de_duplicate/build').default;
 
 let complexArray = [
     { id: 1, name: "Milad", age: 24 },
