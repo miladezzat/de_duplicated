@@ -1,3 +1,9 @@
+#### 2.0.1 (2021-07-21)
+
+##### Bug Fixes
+
+*  solve bug with readme (c590fdc2)
+
 ## 2.0.0 (2021-07-21)
 
 ##### Documentation Changes
