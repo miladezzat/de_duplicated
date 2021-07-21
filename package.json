@@ -1,6 +1,6 @@
 {
   "name": "de_duplicated",
-  "version": "1.0.5",
+  "version": "2.0.0",
   "description": "This is a package to delete the duplicated elements in array",
   "main": "./build/index.js",
   "module": "./build/index.js",
