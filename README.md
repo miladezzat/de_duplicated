@@ -4,15 +4,12 @@ This is package  for deleting the duplicated elements in array, there are contai
 
 ## Getting Started
 
-download the package in your prject and require it, and use it
+download the package in your project and require it, and use it
 
 ### Prerequisites
 
 you should have node.js in your local machine
 
-```
-no examples
-```
 
 ### Installing
 
@@ -60,7 +57,7 @@ console.log(uniqueSimpleArray);
 // result
     //[ 'john', 'milad' ]
 
-   // Note that: The simpleArray method case insenstive for string 
+   // Note that: The simpleArray method case insensitive for string 
 ```
 ```js
  //example 3
@@ -76,7 +73,7 @@ console.log(uniqueSimpleArray);
 //result
     //[ 1, 2, 5, 8, 'john', 'milad' ]
 
-    //Note That: The simpleArray method case insenstive for string 
+    //Note That: The simpleArray method case insensitive for string 
 ```
 2. Examples for complex array
 ```js
@@ -158,5 +155,5 @@ console.log(uniqueComplexArray);
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/miladezzat/de_duplicated/tree/development/LICENSE.md) file for details
 
