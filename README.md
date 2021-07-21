@@ -16,9 +16,13 @@ no examples
 
 ### Installing
 
-open terminale and go to your project directory and write
-``` shell
+open terminal and go to your project directory and write
+``` bash
     npm install de_duplicated
+
+    // or
+
+    yarn add de_duplicated
 ```
 
 ### How To Use it
@@ -27,11 +31,13 @@ After install package
 1. Examples for simple array:
 ```js
 //example 1
-const DE_Duplicated = require('de_duplicated')
+import DeDuplicated from 'de_duplicated';
+// OR
+const DeDuplicated = require('de_duplicated');
 
 let simpleArray = [2, 5, 8, 2, 2, 8, 5, 2, 3];
 
-let uniqueSimpleArray = DE_Duplicated.simpleArray(simpleArray);
+let uniqueSimpleArray = DeDuplicated.simpleArray(simpleArray);
 
 console.log(uniqueSimpleArray);
 //result
@@ -41,11 +47,14 @@ console.log(uniqueSimpleArray);
 
 ```js
 //example 2
-const DE_Duplicated = require('de_duplicated')
+
+import DeDuplicated from 'de_duplicated';
+// OR
+const DeDuplicated = require('de_duplicated');
 
 let simpleArray = ['john', 'milad', 'Milad', 'john', 'John'];
 
-let uniqueSimpleArray = DE_Duplicated.simpleArray(simpleArray);
+let uniqueSimpleArray = DeDuplicated.simpleArray(simpleArray);
 
 console.log(uniqueSimpleArray);
 // result
@@ -55,11 +64,13 @@ console.log(uniqueSimpleArray);
 ```
 ```js
  //example 3
-const DE_Duplicated = require('de_duplicated')
+import DeDuplicated from 'de_duplicated';
+// OR
+const DeDuplicated = require('de_duplicated');
 
 let simpleArray = [1, 2, 1, 2, 5, 8, 8, 5, 'john', 'milad', 'Milad', 'john', 'John'];
 
-let uniqueSimpleArray = DE_Duplicated.simpleArray(simpleArray);
+let uniqueSimpleArray = DeDuplicated.simpleArray(simpleArray);
 
 console.log(uniqueSimpleArray);
 //result
@@ -70,9 +81,11 @@ console.log(uniqueSimpleArray);
 2. Examples for complex array
 ```js
     //example 1
-const DE_Duplicated = require('de_duplicated')
+import DeDuplicated from 'de_duplicated';
+// OR
+const DeDuplicated = require('de_duplicated');
 
-let compexArray = [
+let complexArray = [
     { id: 1, name: "Milad", age: 24 },
     { id: 2, name: "Milad", age: 24 },
     { id: 1, name: "Milad", age: 24 },
@@ -81,9 +94,9 @@ let compexArray = [
     { id: 2, name: "Milad", age: 24 },
 ]
 
-let uniqueCompexArray = DE_Duplicated.complexArray(compexArray, 'id');
+let uniqueComplexArray = DeDuplicated.complexArray(complexArray, 'id');
 
-console.log(uniqueCompexArray);
+console.log(uniqueComplexArray);
 // result
    /* [
         { id: 1, name: 'Milad', age: 24 },
@@ -93,9 +106,11 @@ console.log(uniqueCompexArray);
 ```
 ```js
     //example 2
-const DE_Duplicated = require('de_duplicated')
+import DeDuplicated from 'de_duplicated';
+// OR
+const DeDuplicated = require('de_duplicated');
 
-let compexArray = [
+let complexArray = [
     { id: 1, name: "Milad", age: 24 },
     { id: 2, name: "John", age: 24 },
     { id: 1, name: "Milad", age: 24 },
@@ -104,17 +119,19 @@ let compexArray = [
     { id: 2, name: "Milad", age: 24 },
 ]
 
-let uniqueCompexArray = DE_Duplicated.complexArray(compexArray, 'name');
+let uniqueComplexArray = DeDuplicated.complexArray(complexArray, 'name');
 
-console.log(uniqueCompexArray);
+console.log(uniqueComplexArray);
 //result
     //[ { id: 1, name: 'Milad', age: 24 }, { id: 2, name: 'John', age: 24 } ]
 ```
 ```js
     //example 3
-const DE_Duplicated = require('de_duplicated')
+import DeDuplicated from 'de_duplicated';
+// OR
+const DeDuplicated = require('de_duplicated');
 
-let compexArray = [
+let complexArray = [
     { id: 1, name: "Milad", age: 24 },
     { id: 2, name: "milad", age: 24 },
     { id: 1, name: "Milad", age: 24 },
@@ -123,47 +140,17 @@ let compexArray = [
     { id: 2, name: "Milad", age: 24 },
 ]
 
-let uniqueCompexArray = DE_Duplicated.complexArray(compexArray, 'name');
+let uniqueComplexArray = DeDuplicated.complexArray(complexArray, 'name');
 
-console.log(uniqueCompexArray);
-//resulat
+console.log(uniqueComplexArray);
+//result
     /*[
     { id: 1, name: 'Milad', age: 24 },
     { id: 2, name: 'milad', age: 24 }
     ]*/
 
-    //Note that : The complexArray method case senstive for string 
+    //Note that : The complexArray method case sensitive for string 
 ```
-
-## Running the tests
-
-### Break down into end to end tests
-
-
-```
-Not now an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [JavaScript](https://developer.mozilla.org/ar/docs/Web/JavaScript)
-
-## Contributing
-
-## Versioning
-
 ## Authors
 
 * **Milad E. Fahmy** - *Initial work* - [Milad E. Fahmy](https://github.com/miladezzat/)
@@ -172,6 +159,4 @@ Add additional notes about how to deploy this on a live system
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
 
